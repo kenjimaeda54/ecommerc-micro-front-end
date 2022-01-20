@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
   mode: "development",
@@ -27,6 +28,13 @@ module.exports = {
       title: "Commerce products",
       template: "./public/index.html",
       filename: "index.html",
+    }),
+    new ModuleFederationPlugin({
+      name: "products",
+      filename: "remoteEntry.js",
+      exposes: {
+        "./ProductPage": "./src/index",
+      },
     }),
   ],
 };
