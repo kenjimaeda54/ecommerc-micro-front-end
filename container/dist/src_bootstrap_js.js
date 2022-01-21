@@ -15,7 +15,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var products_ProductPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! products/ProductPage */ \"webpack/container/remote/products/ProductPage\");\n/* harmony import */ var products_ProductPage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(products_ProductPage__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log(\"bootstrap.js\");\n\n\n//# sourceURL=webpack://container/./src/bootstrap.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var products_ProductPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! products/ProductPage */ \"webpack/container/remote/products/ProductPage\");\n/* harmony import */ var products_ProductPage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(products_ProductPage__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var carts_CartPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! carts/CartPage */ \"webpack/container/remote/carts/CartPage\");\n/* harmony import */ var carts_CartPage__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(carts_CartPage__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconsole.log(\"bootstrap.js\");\n\n\n//# sourceURL=webpack://container/./src/bootstrap.js?");
 
 /***/ })
 

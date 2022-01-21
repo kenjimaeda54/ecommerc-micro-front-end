@@ -6,15 +6,15 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkcart"] = self["webpackChunkcart"] || []).push([["src_index_js"],{
+(self["webpackChunkcart"] = self["webpackChunkcart"] || []).push([["src_products_js"],{
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "./src/products.js":
+/*!*************************!*\
+  !*** ./src/products.js ***!
+  \*************************/
+/***/ (() => {
 
-eval("__webpack_require__.e(/*! import() */ \"src_products_js\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./products */ \"./src/products.js\", 23));\n\n\n//# sourceURL=webpack://cart/./src/index.js?");
+eval("const products = 3;\n\nconst card = `\n  <article>\n    <h1>Voce tem ${products} produtos </h1>\n  </article>\n`;\n\ndocument.querySelector(\"#root-cart\").innerHTML = card;\n\n\n//# sourceURL=webpack://cart/./src/products.js?");
 
 /***/ })
 

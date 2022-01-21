@@ -251,7 +251,31 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__.e(/*! import() */ \"src_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n\n//# sourceURL=webpack://container/./src/index.js?");
+eval("__webpack_require__.e(/*! import() */ \"src_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n//import assíncrono\n\n\n//# sourceURL=webpack://container/./src/index.js?");
+
+/***/ }),
+
+/***/ "webpack/container/reference/carts":
+/*!************************************************************!*\
+  !*** external "cart@http://localhost:9000/remoteEntry.js" ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_error__ = new Error();
+module.exports = new Promise((resolve, reject) => {
+	if(typeof cart !== "undefined") return resolve();
+	__webpack_require__.l("http://localhost:9000/remoteEntry.js", (event) => {
+		if(typeof cart !== "undefined") return resolve();
+		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+		var realSrc = event && event.target && event.target.src;
+		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
+		__webpack_error__.name = 'ScriptExternalLoadError';
+		__webpack_error__.type = errorType;
+		__webpack_error__.request = realSrc;
+		reject(__webpack_error__);
+	}, "cart");
+}).then(() => (cart));
 
 /***/ }),
 
@@ -386,7 +410,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("64650563a6134227e455")
+/******/ 		__webpack_require__.h = () => ("20b7a772104fc8149fae")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -467,7 +491,8 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
 /******/ 			"src_bootstrap_js": [
-/******/ 				"webpack/container/remote/products/ProductPage"
+/******/ 				"webpack/container/remote/products/ProductPage",
+/******/ 				"webpack/container/remote/carts/CartPage"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
@@ -475,6 +500,11 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				"default",
 /******/ 				"./ProductPage",
 /******/ 				"webpack/container/reference/products"
+/******/ 			],
+/******/ 			"webpack/container/remote/carts/CartPage": [
+/******/ 				"default",
+/******/ 				"./CartPage",
+/******/ 				"webpack/container/reference/carts"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -561,6 +591,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
+/******/ 					initExternal("webpack/container/reference/carts");
 /******/ 					initExternal("webpack/container/reference/products");
 /******/ 				}
 /******/ 				break;

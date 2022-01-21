@@ -33,7 +33,7 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProductPage": "./src/index",
+        "./ProductPage": "./src/products",
       },
     }),
   ],

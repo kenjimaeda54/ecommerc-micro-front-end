@@ -31,10 +31,15 @@ module.exports = {
     }),
     new ModuleFederationPlugin({
       name: "container",
-      //products: products, e o nome do app definido no moduleFederation
-      //precisa ser o mesmo nome aqui
+      //products/ProductPage.js
+      //ele so reconhece esse import,porque products e a referencia
+      //que esta no container em remotes
+      //ProductsPage e que sendo exposto, no expose do moduleFederationPlugin
+      //products@http://localhost:8080/remoteEntry.js
+      //agora esse products e o nome do app
       remotes: {
         products: "products@http://localhost:8080/remoteEntry.js",
+        carts: "cart@http://localhost:9000/remoteEntry.js",
       },
     }),
   ],
