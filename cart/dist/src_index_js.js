@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkproducts"] = self["webpackChunkproducts"] || []).push([["src_index_js"],{
+(self["webpackChunkcart"] = self["webpackChunkcart"] || []).push([["src_index_js"],{
 
 /***/ "./src/index.js":
 /*!**********************!*\
@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const products = `\n  <article>\n    <div>  \n    <span>Camisa longa preta</span> \n    <span>R$ 100,00</span> \n    </div>\n    <div>\n    <span>Camisa longa branca</span>\n    <span>R$ 100,00</span>\n    </div>\n    <div>\n    <span>Camisa longa vermelha</span>\n    <span>R$ 100,00</span>\n    </div>\n   </article>\n\n`;\n\ndocument.getElementById(\"root\").innerHTML = products;\n\n\n//# sourceURL=webpack://products/./src/index.js?");
+eval("const products = 3;\n\nconst card = `\n  <article>\n    <h1>Voce tem ${products} produtos </h1>\n  </article>\n`;\n\ndocument.querySelector(\"#root\").innerHTML = card;\n\n\n//# sourceURL=webpack://cart/./src/index.js?");
 
 /***/ })
 

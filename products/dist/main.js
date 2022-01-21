@@ -251,7 +251,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
   \**********************/
 /***/ (() => {
 
-eval("const main = document.getElementById(\"root\");\n\nconst article = document.createElement(\"article\");\nconst h3Primary = document.createElement(\"h3\");\nconst h3Secondary = document.createElement(\"h3\");\nconst h3Tertiary = document.createElement(\"h3\");\nconst h3Four = document.createElement(\"h3\");\n\nmain.appendChild(article);\n\narticle.appendChild(h3Primary);\narticle.appendChild(h3Secondary);\narticle.appendChild(h3Tertiary);\narticle.appendChild(h3Four);\n\nh3Primary.innerText = \"Qualidade e nosso selo\";\nh3Secondary.innerText = \"Vendemos apenas produtos de qualidade\";\nh3Tertiary.innerText = \"Confie em nos para ajudar fazer a vida mais felizs\";\nh3Four.innerText = \"Nossa missão é oferecer produtos de qualidade\";\n\n\n//# sourceURL=webpack://products/./src/index.js?");
+eval("const products = `\n  <article>\n    <div>  \n    <span>Camisa longa preta</span> \n    <span>R$ 100,00</span> \n    </div>\n    <div>\n    <span>Camisa longa branca</span>\n    <span>R$ 100,00</span>\n    </div>\n    <div>\n    <span>Camisa longa vermelha</span>\n    <span>R$ 100,00</span>\n    </div>\n   </article>\n\n`;\n\ndocument.getElementById(\"root\").innerHTML = products;\n\n\n//# sourceURL=webpack://products/./src/index.js?");
 
 /***/ })
 
@@ -340,7 +340,7 @@ eval("const main = document.getElementById(\"root\");\n\nconst article = documen
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("f7f29b9da3cbd1127acc")
+/******/ 		__webpack_require__.h = () => ("5d51c001b6569f4eabbc")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
