@@ -10,7 +10,7 @@ Ennteder a fundo o webpack e o plugin module federation
 - Plugin module federation trabalha com conceito de build time
 - As aplicações menores precisam estar copiladas no navegador para serem baixadas
 - Para funcionar precisa de uma aplicação empacotar todas, essa aplicação normalmente recebe nome de container
-- ELe vai consumir as rotas expostas, a composição da url e {nome do (app) que esta sendo consumido}@http://localhost:8080/{filename do arquivo que esta sendo consumido}
+- ELe vai consumir as rotas expostas, a composição da url e `{nome do (app) que esta sendo consumido}@http://localhost:8080/{filename do arquivo que esta sendo consumido}`
 - Existe um bug ,as divs que irão se referenciar não pode estar mesmo nome que arquivo que esta sendo exposto, exemplo abaixo não posso possuir uma div no container com nome de products
 - Para navegador ele ira se referenciar no html, já que usamos o modelo Http e Https, que nada menos nada mais que transferência de hipertexto
 - Para inibir esse problema eu coloquei tipo um hash no html principal
