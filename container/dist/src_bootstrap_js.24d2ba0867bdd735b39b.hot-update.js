@@ -7,7 +7,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkcontainer"] = self["webpackChunkcontainer"] || []).push([["src_bootstrap_js"],{
+self["webpackHotUpdatecontainer"]("src_bootstrap_js",{
 
 /***/ "./src/bootstrap.js":
 /*!**************************!*\
@@ -19,4 +19,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var prod
 
 /***/ })
 
-}]);
+});

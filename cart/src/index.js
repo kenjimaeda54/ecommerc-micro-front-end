@@ -1,1 +1,1 @@
-import("./products");
+import("./cart.js");

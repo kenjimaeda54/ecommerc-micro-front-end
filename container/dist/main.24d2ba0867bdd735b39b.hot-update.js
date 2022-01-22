@@ -1,3 +1,4 @@
+"use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -6,16 +7,12 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkcart"] = self["webpackChunkcart"] || []).push([["src_index_js"],{
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("__webpack_require__.e(/*! import() */ \"src_products_js\").then(__webpack_require__.t.bind(__webpack_require__, /*! ./products */ \"./src/products.js\", 23));\n\n\n//# sourceURL=webpack://cart/./src/index.js?");
-
-/***/ })
-
-}]);
+self["webpackHotUpdatecontainer"]("main",{},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("1cf48879526df5c1d661")
+/******/ })();
+/******/ 
+/******/ }
+);

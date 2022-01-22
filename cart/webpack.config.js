@@ -32,7 +32,7 @@ module.exports = {
       name: "cart",
       filename: "remoteEntry.js",
       exposes: {
-        "./CartPage": "./src/index",
+        "./CartPage": "./src/cart",
       },
     }),
   ],
