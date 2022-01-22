@@ -15,7 +15,7 @@ Ennteder a fundo o webpack e o plugin module federation
 - Para navegador ele ira se referenciar no html, já que usamos o modelo Http e Https, que nada menos nada mais que transferência de hipertexto
 - Para inibir esse problema eu coloquei tipo um hash no html principal
 
-``` javascript
+```javascript
 
 
 // products
@@ -43,7 +43,7 @@ Ennteder a fundo o webpack e o plugin module federation
 
 ```
 
-``` html
+```html
 
 <!DOCTYPE html>
 <html lang="en">
